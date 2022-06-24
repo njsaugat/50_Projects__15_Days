@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+    overflow:hidden;
+    background-color: rgb(29, 131, 255);
+    color:white
+
+}
+.goal{
+    margin-bottom: 20px;
+}
+
+.big-bottle{
+    height: 350px ;
+    width: 150px;
+    background-color: azure;
+    color:rgba(0, 42, 181, 0.897) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius:40px ;
+    border-bottom-right-radius:40px;
+    border:4px solid rgb(0, 79, 251);
+    box-shadow: 0px 2px 4px rgba(0, 42, 181, 0.897);
+    position: relative;
+}
+
+.big-bottle .drank{
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.big-bottle .drank.activate{
+    background-color: rgb(78, 156, 251);
+    /* height: 12.5%;  */
+    /* ----------------------------------*/
+    width: 100%;
+    opacity: 1;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0%;
+    border-bottom-left-radius:40px ;
+    border-bottom-right-radius:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 1000;
+
+}
+.big-bottle .remain.activate{
+    position: absolute;
+    /* top:10% */
+     /* ----------------------------------*/
+}
+
+.big-bottle .remain{
+    transition: position 0.5 ease;
+}
+.big-bottle .volume{
+    font-weight: 1000;
+    font-size: 1.4rem;
+}
+.big-bottle .litre{
+    font-size: 0.9rem;
+}
+
+.small-bottles{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    /* transition: 0.5 ease; */
+}
+
+.bottle{
+    width: 48px;
+    height: 100px;
+    background-color:azure;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgba(0, 42, 181, 0.897) ;
+    margin: 10px;
+    border:4px solid rgb(0, 79, 251);
+    box-shadow: 0px 2px 4px rgba(0, 42, 181, 0.897);
+    cursor: pointer;
+}
+
+.bottle.active{
+    background-color: rgb(78, 156, 251);
+    color:white;
+}
