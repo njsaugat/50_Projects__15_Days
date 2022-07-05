@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+
+}
+
+/* .value:first-child{
+    transform: rotate(180deg);
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.value{
+    position: absolute;
+    /* height: 50px; */
+    /* transform-origin:bottom center ; */
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: transform 0.4s ease-in-out,scale 0.4s ease-in-out;
+    font-size: 3rem;
+    color: rgb(25, 179, 240);
+}
+
+.value.active{
+
+    transform: rotate(0deg) scale(1.2);
+    /* transition: transform 0.2s ease; */
+    /* transform-origin: bottom center; */
+    opacity: 1;
+
+    /* transform: ; */
+}
+
+
+.changed{
+    transition:  0.5s ease;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.changed.active{
+    transform: translateY(-20px);
+    display: flex;
+    flex-direction: column;    
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+
+    /* width: 100px; */
+}
+
+.changed button{
+    /* opacity: 0; */
+    /* display: none; */
+    margin-top: 15px;
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: azure;
+
+
+}
+
+.changed button:focus{
+    outline: none;
+}
+
+
+/* .changed button.activated{
+    opacity: 1;
+    display: block;
+} */
