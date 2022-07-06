@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    background-color: steelblue;
+}
+.container{
+    background-color: rgb(0, 0, 98);
+    width: 350px;
+    height: 370px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.519);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+}
+
+.password-field{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.password-field i{
+    margin-left: 10px;
+    width: 15%;
+    height: 35px;
+    background-color: blueviolet;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.password-value{
+    width: 100%;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+
+}
+
+.criteria{
+    line-height: 35px;
+    width: 100%;
+}
+
+.criterion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* letter-spacing: 1px; */
+}
+
+.password-length input{
+    width: 40px;
+    /* font: inherit; */
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.password-length input:focus{
+    outline: none;
+}
+
+.password-length input::-webkit-outer-spin-button,
+.password-length input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.generate-password{
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.generate-password .btn{
+    background-color: steelblue;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.379);
+}
+
+.btn:active{
+    transform: scale(0.98)
+}
+
+.criterion i{
+    cursor: pointer;
+}
+
+/* .criterion i.active{
+    height: 90%;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    cursor: pointer;
+} */
