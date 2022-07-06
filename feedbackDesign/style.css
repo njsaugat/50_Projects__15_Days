@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    background-image: linear-gradient(240deg, rgba(70, 131, 180, 0.359), azure);
+
+}
+
+.container{
+    position: relative;
+}
+
+.state{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.614);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 250);
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+}
+/* .previous{ */
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* z-index:2; */
+    /* opacity: 0; */
+/* } */
+.question{
+    width: 90%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.emotions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    margin-top: 50px;
+}
+
+.emotion{
+    height: 120px;
+    width: 100px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(120, 120, 120, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    /* background-color: black; */
+    /*  */
+}
+
+.emotion:hover{
+    box-shadow: 0px 1px 15px rgba(120, 120, 120, 0.5);
+
+}
+
+.emotion.active{
+    box-shadow: -10px 2px 15px rgba(120, 120, 120, 0.5);
+    border-radius: 5px;
+    
+}
+
+.emotion span{
+    margin-top: 20px;
+}
+.emotion i{
+    color: rgb(255, 204, 0);
+    font-size: 3.5rem;
+    
+    background-color: black;
+    border-radius: 50%;
+}
+/* 
+.emotion::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+} */
+
+.send-review button{
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+
+.after{
+    height: 200px;
+    letter-spacing: 0.8px;
+    position: absolute;
+    opacity: 0;
+}
+
+.after.active{
+    opacity: 1;
+    top: 20%;
+    transition: 1s ease;
+    /* transform: tr; */
+}
+
+.after i{
+    color: red;
+    font-size: 2rem;
+}
+.after .finalMsg{
+    text-align: center;
+    font-size: 14px;
+    color: rgba(114, 114, 114, 0.829);
+}
+
+.feedback span{
+    font-weight: bolder;
+}
+
