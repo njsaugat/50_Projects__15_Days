@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow:hidden;
+
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding: 20px; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* display: ; */
+}
+.nav{
+    position: relative;
+    cursor: pointer;
+    height: 20px;
+    font-size: 20px;
+    /* transition: opacity 0.6s ease; */
+}
+
+.nav i{
+    top:10px;
+    left: 10px;
+}
+
+.fa-bars{
+    position: absolute;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.nav.inactive{
+    /* opacity: 0; */
+    display: none;
+}
+
+/* .navigation{
+    
+} */
+
+
+
+
+
+
+
+.navi{
+    /* position: absolute;
+    top:0; */
+    position: absolute;
+    top:10px;
+    left:20px;
+    text-transform: uppercase;
+    /* opacity: 0; */
+
+    position: relative;
+    transform: translateX(-300%);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.navi.visible{
+    /* position: relative;
+    height: 100%;
+    width: 300px; */
+    /* opacity: 1; */
+    transform: translateX(0%);
+    /* transition: transform 0.6s ease-in-out; */
+
+}
+
+.navi.visible a{
+    /* list-style-type: none; */
+    text-decoration: none;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    color:gray
+}
+
+.navi.visible a span{
+    margin-left: 30px;
+}
+.navi.visible i{
+    position: absolute;
+    left: 220px;
+    top:50px;
+    color:gray;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+
+.nav-black{
+    background-color: black;
+    width: 50%;
+    /* max-width: 480px;
+    min-width: 320px; */
+    height: 103vh;
+    position: absolute;
+    top:0%;
+    left: 0%;
+    transition-delay: 0.4s;
+}
+
+.nav-black.visible{
+    transition-delay: 0s;
+}
+.nav-red{
+    background-color: rgb(229,9,20);
+    width: 95%;
+    height: 100%;
+    transition-delay: 0.2s;
+}
+
+.nav-red.visible{
+    transition-delay: 0s;
+}
+
+.nav-white{
+    background-color: white;
+    width: 95%;
+    padding: 40px;
+    position: relative;
+    height: 100%;
+    transition-delay: 0.2s;
+
+}
+
+.nav-white.visible{
+    transition-delay: 0.1s;
+}
+
+/* .navigation.active::before{
+    content: '';
+    height: 100vh;
+    width: 15px;
+    position: absolute;
+    top:0;
+    right: 20px;
+    transform: translateY(-30px);
+    background-color: red;
+}
+.navigation.active::after{
+    content: '';
+    height: 100vh;
+    width: 15px;
+    position: absolute;
+    top:0;
+    left: 280px;
+    transform: translateY(-30px);
+    background-color: black;
+}
+.navigation.active span::before{
+    content: '';
+    height: 100vh;
+    width: 15px;
+    position: absolute;
+    top:0;
+    left: 250px;
+    transform: translateY(-30px);
+    background-color: rgb(240, 255, 255);
+} */
+
+.content{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 45%;
+    top:40%;
+    transform: translateY(-50%); */
+    /* width: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%); 
+
+}
+
+.logo{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png?20190206123158');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 150px;
+}
+
+.other{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:700px){
+    .navi.visible +.content{
+        opacity: 0;
+        /* z-index:2; */
+    }
+
+    .content{
+        /* position: absolute;
+        z-index: -1; */
+        left: 36%;        
+    }
+} 
