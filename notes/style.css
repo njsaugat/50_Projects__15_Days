@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* overflow:hidden; */
+    position: relative;
+    background-color: rgb(119, 220, 254);
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+
+.btn{
+    position: absolute;
+    left:82%;
+    top:1%;
+    font: inherit;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgb(172, 255, 47);
+    border: none;
+    border-radius: 5px;
+    color: black;
+
+}
+
+.notes{
+    /* position: absolute; */
+    top:5%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    height: 500px;
+    margin:30px 50px;
+}
+
+@media(max-width:800px){
+    .container{
+        /* height: 100%;
+        flex-wrap: wrap;
+        display: flex; */
+        /* flex-direction: column; */
+        justify-content: space-between;
+    }
+    .notes{
+        margin-left: 20%;
+    }
+}
+.top{
+    width: 100%;
+    height:50px;
+    background-color: greenyellow;
+    position: relative;
+    box-shadow: 0px 0px 2px  rgba(255, 255, 255, 0.926);
+
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+}
+
+.fa-trash{
+    position: absolute;
+    left: 90%;
+    top:50%;
+    transform: translateY(-50%);
+    /* transform: scale(0); */
+    /* opacity: 0; */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* .fa-trash:hover{
+    opacity: 1;
+    transform: scale(1);
+} */
+
+.fa-pen-to-square{
+    position: absolute;
+    left: 80%;
+    top:50%;
+    transform: translateY(-50%);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+
+.fa-trash:hover,
+.fa-pen-to-square:hover{
+    transform: translateY(-50%) scale(2);
+}
+
+
+
+.note{
+    box-shadow: 0px -10px 2px  rgba(255, 255, 255, 0.926);
+
+}
+.notes textarea{
+    width: 100%;
+    height: 400px;
+    resize: none;
+    border: none;
+    /* border: 5px solid greenyellow; */
+    font: inherit;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.notes textarea:focus{
+    outline: none;
+}
+textarea.inactive{
+    /* opacity: 0; */
+    display: none;
+}
+
+.done{
+    position: absolute;
+    top:30%;
+    left: 80%;
+    width: 50px;
+    background-color: red;
+    color:white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.695);
+    transition: 0.5s ease;
+}
+
+.texthold.active{
+    /* opacity: 1; */
+    height: 400px;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 23px;
+    word-wrap: break-word;
+    max-width: 100%;
+}
