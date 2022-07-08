@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    background-image: linear-gradient(180deg, rgb(101, 182, 253), azure);
+
+}
+
+.container{
+    width: 450px;
+    height: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.611);
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.71);
+    padding: 30px;
+    transition:height 0.8s ease;
+}
+
+.container.message{
+    width: 450px;
+    max-width: 100%;
+    font-weight: bold;
+    height: 120px;
+}
+
+.container.message div{
+    text-align: center;
+    color:rgba(128, 128, 128, 0.621);
+}
+.container span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 60%; */
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input,label{
+    cursor: pointer;
+}
+
+
+.option{
+    display: flex;
+    position: relative;
+    margin: 20px;
+}
+
+
+.option input[type="radio"]{
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    width: 1.15rem;
+    height: 1.15rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.84);
+    border-radius: 50%;
+    transform: translateY(0.098rem);
+    margin:0px 10px;
+}
+
+
+.circle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.875);
+    background-color: rebeccapurple;
+
+}
+
+.circle.active{
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    transition: 120ms transform ease-in-out;
+
+    transform: scale(1);
+
+}
+
+.btn{
+    width: 453px;
+    max-width: 100%;
+    background-color: rgb(124, 64, 184);
+    height: 40px;
+    border: none;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font: inherit;
+    color: white;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: rgba(102, 51, 153, 0.907);
+}
+
+.btn:focus{
+    outline: none;
+}
