@@ -121,6 +121,8 @@ body{
 }
 
 .nav-black.visible{
+    left: -60px;
+    top: -21px;
     transition-delay: 0s;
 }
 .nav-red{
