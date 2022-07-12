@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', 'sans-serif';
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+
+}
+
+.container{
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    padding: 40px;
+    background-color: rgb(47, 103, 233);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.734);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease;
+
+}
+
+.line{
+    width: 90%;
+    /* width: 0; */
+    height: 3px;
+    border-radius: 1px;
+    background-color: white;
+    margin-bottom: 20px;
+    animation: grow 5s linear infinite;
+    transform-origin: left;
+}
+
+
+@keyframes grow{
+    0%{
+        transform: scaleX(0);
+    }
+
+}
+
+.line.active{
+    transition: width 3s ease-in;
+    width: 100%;
+}
+.content{
+    display: flex;
+}
+
+.content i{
+    font-size: 2rem;
+    color:rgba(41, 42, 44, 0.4);
+}
+
+.content span{
+    text-align: justify;
+    margin:0px 20px;
+    line-height: 25px;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.image{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.right span{
+    margin-bottom: 10px;
+}
+
+@media(max-width:800px){
+    body{
+        margin: 0px 50px;
+    }
+}
