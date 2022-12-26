@@ -1,0 +1,31 @@
+body,
+.lists,
+.lists a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  overflow-x: hidden;
+}
+.lists {
+  width: 90vw;
+  flex-wrap: wrap;
+  margin: 2rem 5rem;
+}
+.lists a {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, purple, rgb(212, 89, 212));
+  background-attachment: fixed;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+  margin: 1.4rem;
+  text-transform: capitalize;
+}
+.lists a:hover {
+  transform: scale(1.02);
+}
