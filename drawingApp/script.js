@@ -9,7 +9,7 @@ const clearEl = document.body.querySelector('.clear');
 let x,y;
 let size=10;
 let color='Black'
-let isPressed='false'
+let isPressed=false;
 canvas.addEventListener('mousedown',(e)=>{
     isPressed=true;
 
